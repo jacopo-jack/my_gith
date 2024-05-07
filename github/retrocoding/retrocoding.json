@@ -1,0 +1,12 @@
+{
+    "@context":[
+        "https://archive.org/details/texts"
+    ],
+    "id":[
+        "https://archive.org/details/texts"               
+],
+    "type":["texts"],
+    "issuer":"",
+    "ValidFrom": "2024-22-75T14:27:42Z"
+    
+}

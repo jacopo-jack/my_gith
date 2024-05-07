@@ -1,0 +1,51 @@
+/* css per home page*/
+/* oggetto seguente(css-box model) comune a tutti i documenti (copia e incolla)*/
+*{
+   margin: 1em;
+   border-radius: 1%;
+}
+header,body{
+ 
+      text-align: center;
+      font-size: larger;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif,system-ui,'Segoe UI', sans-serif;
+}
+button{
+    text-align: center;
+    color: white;
+    background-color: green;
+}
+p,a{
+    text-align: center;
+    text-decoration: none;
+}
+/*oggetto link e img come oggetto globale css-nox model da fare copia e incolla
+  nelle varie pagine della directory all'occorrenza*/
+#item1,#item2,#item3,#item4,#item5,#item6{
+    color: white;
+    clear: both;
+
+}
+img{
+    position: cover;
+    width: 5%; 
+    height: 5%;
+    vertical-align: middle;
+    margin-left:-80%;
+    margin-right: 0%;
+
+}
+ul,li{
+    list-style: none;
+    word-spacing: normal;
+    box-sizing: border-box;
+    border-radius: 10% black;
+    background-color: blue;
+    opacity: 100%;
+}
+.button{
+    color: white;
+    background-color: blue;
+    border-radius: 10%;
+    text-decoration: none;
+}

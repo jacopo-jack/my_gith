@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+<body>
+    <div id="IA_fetch" style="display: none;">
+    </div>
+    <div id="IA_fetch_undercostruction" style="display: block;">
+         <img src="https://www.doctor-web.it/wp-content/uploads/2023/05/sito-in-costruzione.jpg" alt="undercostruction" id="books">
+    </div>
+</body>
+<script>
+    let ia_content = document.getElementById("IA_fetch");
+    let no_ia_content = document.getElementById("IA_fetch_undercostruction");
+    let show_content = document.getElementById("books");
+    if(ia_content.innerHTML.trim() === ''){
+        no_ia_content.style.display = 'block';
+    }
+    else {
+        ia_content.style.display = 'block';
+        no_ia_content.style.display = 'none';
+    }
+</script>
+</html>

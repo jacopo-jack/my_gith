@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="it">
+    <title>Performance</title>
+    <link rel='stylesheet' href="regedit\style.css"  type="text/css">
+</head>
+<header>
+    <img src="Registry_Editor_icon.png"><a href="">Registry</a>
+    <a href ="">Accedi al tuo account</a>
+    <a href ="https://docs.microsoft.com/it-it/">Documenti</a>
+</header>
+<body>
+<div>
+    <h1>Velocizzare il sistema e le applicazioni</h1>
+    <h2>Fonte trucchi:<a href="https://www.borsainside.com/tecnologia/78495-migliori-trucchi-registro-di-sistema-windows/">Borsa Inside</a></h2>
+    <pre>Questo trucco velocizza il PC e le applicazioni</pre>
+    <pre>
+<code>
+    HKEY_LOCAL_MACHINESYSTEMCurrentControlSetControlSession
+    ManagerMemory ManagementPrefetchParametersEnablePrefetcher=3 
+</code>
+</pre>
+<h1>Il file di boot</h1>
+   <pre>Con questa impostazione si ottimizza il file di boot</pre>
+   <pre>
+<code>
+    HKEY_LOCAL_MACHINESOFTWARE
+    MicrosoftDfrgBootOptimizeFunction
+    Enable=Y ; se e' gia' cosi' altrimenti metti a mano
+</code>
+</pre>
+<h1>Liberare memoria</h1>
+   <pre>Se si vuole scaricare le librerie DLL non utilizzate per liberare la memoria</pre>
+   <pre>
+<code>
+    HKEY_LOCAL_MACHINESOFTWARE
+    CurrentControlSetServicesCiSvc
+    Start in= 4
+</code>
+<h1>Disabilitare il riavvio automatico del PC dopo la BSOD</h1>
+<code>
+    HKEY_LOCAL_MACHINESYSTEM
+    CurrentControlSet
+    ControlCrashControl
+    Autoreboot=0
+</code>
+<h1>Aumentare le performance del file system NTFS</h1>
+<code>
+    HKEY_LOCAL_MACHINESYSTEM
+    CurrentControlSet
+    NtfsDisableLastAccessUpdate=1 ;creo e rinomino cosi' il valore DWORD 
+</code>
+<h1>Chiudere le applicazioni che non rispondono</h1>
+   <pre>Se si vuole chiudere automaticamente le applicazioni che non rispondono</pre>
+   <pre>
+<code>
+    HKEY_CURRENT_USER
+    Control Panel
+    Desktop
+    AutoEndTask=1
+</code>
+<h1>Aumentare la cache del disco</h1>
+<code>
+    HKEY_LOCAL_MACHINESYSTEM
+    CurrentControlSet
+    ManagerMemory Managemen
+    IoPageLockLimit ;una volta creato il DWORD inserire un valore,esadecimale,pari al 75% della RAM 
+</code>
+<h1>Aumentare le prestazioni del disco abilitando l’UDMA 66 sui canali IDE</h1>
+<code>
+    HKEY_LOCAL_MACHINE
+    SystemCurrentControlSet
+    ControlClass
+    {4D36E96A-E325-11CE-BFC1-08002BE10318}
+</code>
+</pre>
+</div>
+</body>
+<footer>
+    <a href="">Lingua</a>
+    <a href="">Mappa del sito</a>
+    <a href="https://support.microsoft.com/contactus">Supporto tecnico</a>
+    <a href="https://account.microsoft.com/account/Account?refd=www.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dwww.microsoft.com&destrt=home-index">Microsoft Store</a>
+</footer>
+</html>

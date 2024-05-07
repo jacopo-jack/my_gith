@@ -1,0 +1,21 @@
+{
+    "@context":[
+        "computer.html", 
+        "embed3.html",
+        "embed4.html",
+        "Video.html",
+        "windows.html",
+        "winmagazine.html"        
+    ],
+    "id":["computer.html",
+          "embed3.html",
+          "embed4.html",
+          "Video.html",
+          "windows.html",
+          "wwinmagazine.html"        
+],
+    "type":["VerificableCredential"],
+    "issuer":"",
+    "ValidFrom": "2024-04-95T14:27:42Z"
+    
+}

@@ -1,0 +1,21 @@
+{
+    "@context":[
+        "index.html", 
+        "about.html",
+        "retrocoding\books.html",
+        "forks\forks.html",
+        "bookmarshub\bookmarkshub1.html",
+        "bookmarshub\bookmarkshub.html"        
+    ],
+    "id":["index.html",
+          "about.html",
+          "retrocoding\books.html",
+          "forks\forks.html",
+          "bookmarshub\bookmarkshub1.html",
+          "bookmarshub\bookmarkshub.html"        
+],
+    "type":["VerificableCredential"],
+    "issuer":"",
+    "ValidFrom": "2024-04-75T14:27:42Z"
+    
+}

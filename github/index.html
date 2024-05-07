@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="IT-it" role="document">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_github</title>
+    <link rel="manifest" href="script\manifest.json">
+    <script src="script\index.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body role="generic">
+    <header role="banner">
+        <button onclick="header()" id="myheader" role="button">Header</button>
+        <div id="navbar" style="display: none;">
+        </div>
+    </header>
+    <hr role="separator">
+    <section id="main_section" aria-atomic="true">
+        <p role="paragraph">Questa web directory dei miei progetti su github è guidata dai bottoni.</p>
+        <br><p role="paragraph">Cliccando il bottone nell'header comparirà la navbar.<br></p>
+        <p role="paragraph">Premi questo bottone per navigare la directory.<br>
+        P.S.: La navbar verrà visualizzata uguale</p>
+        <br><button onclick= "showcontent()" role="button">Click_me</button>
+    </section>
+    <section id="hidden_content" style="display: none;">
+          <a href="#">Linkedin</a>
+    </section> 
+    <hr role="separator">
+    <section id="links" style="display: none;">
+     <ul role="list">
+        <!--link per altri progetti su github qui-->
+        <li role="list">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Crystal_Clear_action_bookmark.svg/1024px-Crystal_Clear_action_bookmark.svg.png" alt="logo"><a href="bookmarshub\index.html" id="item1">Bookmarkshub</a></li>
+        <li role="list">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25406.png" alt="logo"><a href="forks\index.html" id="item2">Forks</a></li>
+        <li role="list">
+            <img src="https://static-00.iconduck.com/assets.00/mame-icon-512x506-jllnc05w.png" alt="mame"><a href="mame_online\mame.html" id="item3">mame_online</a></li>
+        <li role="list">
+            <img src="https://cdn2.vectorstock.com/i/1000x1000/58/56/portfolio-icon-linear-style-vector-20905856.jpg" alt="portfolio"><a href="Portfolio\index.html" id="item4">Portfolio</a></li>
+        <li role="list">
+            <img src="https://cdn-icons-png.flaticon.com/512/4703/4703650.png" alt="pc"><a href="questopc\index\guide.html" id="item5">Questo PC</a></li>
+        <li role="list">
+            <img src="https://cdn.icon-icons.com/icons2/17/PNG/256/regedit_1983.png" alt="regedit"><a href="regedit\index.html" id="item6">Regedit</a></li>
+        <li role="list">
+            <img src="" alt="logo"><a href="retrocoding\books.html">Retrocoding</a>
+        </li>
+        </ul>
+    </section>
+</body>
+<footer role="contentinfo">
+    <p role="paragraph">Web directory scritta seguendo standard w3</p>
+    <a href="https://www.w3.org/standards/#:~:text=W3C%20standards%2C%20technical%20specifications%20and%20guidelines%20are%20widely,4%20Linking%20data%20and%20services%205%20Authoring%20tools" role="" class="button"> Standard w3</a>
+</footer>
+</html>

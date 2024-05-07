@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <div id="content" style="display: none;"></div>
+    <div id="undercostruction" style="display: block;">
+        <img src="https://www.doctor-web.it/wp-content/uploads/2023/05/sito-in-costruzione.jpg" alt="undercostruction">
+    </div>
+    <script>
+        let  content = document.getElementById("content");
+        let  no_content = document.getElementById("undercostruction");
+        if( content == ''){
+           no_content.style.display = 'block';
+        } 
+        else if( content !== ''){
+           no_content.style.display = 'block';
+        }
+     </script>
+</body>
+</html>

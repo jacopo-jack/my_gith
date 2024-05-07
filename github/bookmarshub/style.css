@@ -1,0 +1,14 @@
+/*credo non funzioni eppure la sintassi è giusta*/ 
+@import url('github\main.css');
+.container{
+    border-color: blue;
+    border-radius: 2%;
+}
+.wrap,.button{
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    background-color: aliceblue;
+}
+
+

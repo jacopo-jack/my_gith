@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta lang="it">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registry</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metro/4.5.7/metro.css" integrity="sha512-3qBp2k/1hgns/dIIcFH0dX01yUL082SOhJA2OwTsZhpaT2qVU4rMNrpIEl6MQyXtrm/UEdMhzh6E8odjRwl7Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+<img src="Registry_Editor_icon.png"><a href="index.html">Registry</a>
+<a href ="">Accedi al tuo account</a>
+<a href ="https://docs.microsoft.com/it-it/">Documenti</a>
+</header>
+<body>
+<div>
+<pre>
+La lista completa dei trucchi per ottimizzare Windows98 <a href="http://web.tiscali.it/coassin/guidawin98/trucchi2.html">trovata qui</a> 
+Mi fermo ai trucchi da registro di sistema
+<ol>
+<li>Disattivare il <a href="">DDC</a></li>
+<code>
+Hkey_local_machine\ system\ currentcontroset\ services\ class\ display\ 0000\ default
+DDC=0 ;al posto di 1
+</code>
+<li>Velocizzare il menu d'avvio</li>
+<code>
+HKEY_Current_User\Control Panel\Desktop
+MenuShowDelay=1 ; una volta creata la voce i valori possibili vanno da 1 a 10
+HKEY_USERS\Default\Control Panel\desktop
+MenuShowDelay=1
+</code>
+<li>Velocizzare lo spegnimento di Windows </li>
+<code>
+HKEY_CURRENT_USER\Control Panel\Desktop
+WaitToKillAppTimeout= 3000 ; anziche 20000
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control
+WaitToKillServiceTimeout= 3000 ; anziche 5000
+HKEY_CURRENT_USER\Control Panel\Desktop
+HungAppTimeout= 3000 ; anziche 5000
+</code>
+<li>Mettere in riga il menu di Windows98</li>
+<code>
+HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\EXPLORER\ADVANCED
+StartMenuScrollPrograms=Yes ; una volta creata
+</code>
+<li>Ho perso la product key di windows: come posso ritrovarla</li>
+<code>
+HKEY_LOCAL_MACHINE SOFTWARE.
+Vale lo stesso per Windows10; il percorso è leggermente diverso:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
+</code>
+</ol> 
+</pre> 
+</div>
+</body>
+<footer>
+<a href="">Lingua</a>
+<a href="">Mappa del sito</a>
+<a href="https://support.microsoft.com/contactus">Supporto tecnico</a>
+<a href="https://account.microsoft.com/account/Account?refd=www.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dwww.microsoft.com&destrt=home-index">Microsoft Store</a>
+</footer>
+</html>

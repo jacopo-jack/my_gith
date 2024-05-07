@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="it">
+    <title>User Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metro/4.5.7/metro.css" integrity="sha512-3qBp2k/1hgns/dIIcFH0dX01yUL082SOhJA2OwTsZhpaT2qVU4rMNrpIEl6MQyXtrm/UEdMhzh6E8odjRwl7Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <img src="Registry_Editor_icon.png"><a href="index.html">Registry</a>
+    <a href ="">Accedi al tuo account</a>
+    <a href ="https://docs.microsoft.com/it-it/">Documenti</a>
+</header>
+<body>
+<div>
+    <h1>Barra delle applicazioni.</h1>
+    <h2>Fonte trucchi:<a href="https://www.fastweb.it/web-e-digital/windows-10-i-migliori-trucchi-del-registro-di-sistema/">Digital Magazine</a></h2>
+    <pre>Questo trucco permette di aprire, direttamente, l'ultima finestra utilizzata</pre>
+   <pre>
+    <code>
+        HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+        DWORD 32-bit ;creare un nuovo valore chiamato LastActiveClick
+        LastActiveClick=1 
+    </code>
+</pre>
+<h1>Il menu a tendina.</h1>
+   <pre>Questo trucco permette di personalizzare le app che compaiono nel menu a tendina del Desktop</pre>
+   <pre>
+    <code>
+    HKEY_CLASSES_ROOT\Directory\Background\shell
+    command key ;e' una nuova chiave che si crea col tasto destro del mouse
+    command     ;la sotto chiave dove inserire l'intero percorso dell'applicazione che si vuole aggiungere al menu 
+    </code>
+</pre>
+<h1>Immagini 3D</h1>
+   <pre>Se si vuole eliminare la cartella Immagini 3D</pre>
+   <pre>
+    <code>
+    HKEY_CLASSES_ROOT\Directory\Background\shell
+    {0DB7E03F-FC29-4DC6-9020-FF41B59E513A} ; la sotto cartella da eliminare ed e' eliminata se il sistema e' a 32-bit
+    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace ;devi cancellarla pure da qua se a 64bit
+    </code>
+</pre>
+</div>
+</body>
+<footer>
+    <a href="">Lingua</a>
+    <a href="">Mappa del sito</a>
+    <a href="https://support.microsoft.com/contactus">Supporto tecnico</a>
+    <a href="https://account.microsoft.com/account/Account?refd=www.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dwww.microsoft.com&destrt=home-index">Microsoft Store</a>
+</footer>
+</html>
